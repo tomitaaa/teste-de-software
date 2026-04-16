@@ -8,4 +8,7 @@ describe("Verifcador de Senhas", () => {
   test("nao ira aceitar uma senha sem letra maiuscula", () => {
     expect(validarSenha("ifprpvai!")).toBe(false);
   });
+  test("nao ira aceitar senha sem letra minuscula", () => {
+  expect(validarSenha("IFPRPVAI!!")).toBe(false);
+});
 });
