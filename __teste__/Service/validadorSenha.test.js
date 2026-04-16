@@ -17,4 +17,7 @@ describe("Verifcador de Senhas", () => {
   test("nao ira aceitar senha sem caractere especial", () => {
     expect(validarSenha("Ifprpvai11")).toBe(false);
   });
+  test("deve rejeitar senha com espaços", () => {
+    expect(validarSenha("Ifprpvai123!A ")).toBe(false);
+  });
 });
