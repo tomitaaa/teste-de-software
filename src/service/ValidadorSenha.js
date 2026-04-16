@@ -3,7 +3,8 @@ function validarSenha(senha) {
 
   const temMaiuscula = /[A-Z]/.test(senha);
   const temMinuscula = /[a-z]/.test(senha);
+  const temNumero = /[0-9]/.test(senha);
 
-  return temMaiuscula && temMinuscula;
+  return temMaiuscula && temMinuscula && temNumero;
 }
 module.exports = { validarSenha };
