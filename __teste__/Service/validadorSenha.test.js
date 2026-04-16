@@ -9,10 +9,12 @@ describe("Verifcador de Senhas", () => {
     expect(validarSenha("ifprpvai!")).toBe(false);
   });
   test("nao ira aceitar senha sem letra minuscula", () => {
-  expect(validarSenha("IFPRPVAI!!")).toBe(false);
-});
-test("deve rejeitar senha sem número", () => {
-  expect(validarSenha("Ifprpvai!")).toBe(false);
-});
-
+    expect(validarSenha("IFPRPVAI!!")).toBe(false);
+  });
+  test("nao ira aceitar senha sem número", () => {
+    expect(validarSenha("Ifprpvai!")).toBe(false);
+  });
+  test("nao ira aceitar senha sem caractere especial", () => {
+    expect(validarSenha("Ifprpvai11")).toBe(false);
+  });
 });
