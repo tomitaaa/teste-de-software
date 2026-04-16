@@ -85,7 +85,7 @@ describe("emprestimo", () => {
       disponivel: caso.livroDisponivel,
     });
     //Act
-    const saida = ServicoEmprestimo.autorizarEmprestimo(usuario, livro);
+   // const saida = ServicoEmprestimo.autorizarEmprestimo(usuario, livro);
 
     //Assert
     if(caso.livroDisponivel == true){
