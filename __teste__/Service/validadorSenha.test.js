@@ -1,11 +1,11 @@
 const { validarSenha } = require("../../src/service/ValidadorSenha");
 
 describe("Verifcador de Senhas", () => {
-  test("não irá aceitar uma senha com menos de 8 caracteres", () => {
+  test("nao ira aceitar uma senha com menos de 8 caracteres", () => {
     expect(validarSenha("Ab1!")).toBe(false);
   });
 
-  test("não irá aceitar uma senha sem letra maiúscula", () => {
-    expect(validarSenha("ifprpvai")).toBe(false);
+  test("nao ira aceitar uma senha sem letra maiuscula", () => {
+    expect(validarSenha("ifprpvai!")).toBe(false);
   });
 });

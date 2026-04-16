@@ -1,5 +1,8 @@
 function validarSenha(senha) {
-  return senha.length >= 8;
-}
+  if (senha.length < 8) return false;
 
+  const temMaiuscula = /[A-Z]/.test(senha);
+
+  return temMaiuscula;
+}
 module.exports = { validarSenha };
